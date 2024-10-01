@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOKESHIMMANDI/Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/1b4670d24f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- -------------HOME-------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <i class="fa-solid fa-house logo"></i>
+                <!-- <img src="" class="logo">       Add logo image url -->
+                 <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#profiles">Profiles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hello I'm <span>LOKESH IMMANDI</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------ABOUT------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://res.cloudinary.com/dlwtpc1ih/image/upload/v1727779157/WhatsApp_Image_2024-10-01_at_16.05.35_56d23572_kqfmmy.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a skilled frontend developer proficient in HTML, CSS, and JavaScript. With a strong foundation in Python, I create dynamic and user-friendly web applications. My experience includes developing responsive interfaces and implementing projects that enhance user experience and performance optimization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<!--                        <p class="tab-links" onclick="opentab('internships')">Internships</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Developing webpages using HTML, CSS & JavaScript</li>
+                            <li><span>Python Programing</span><br>Analyzing & solving problems in various coding platforms</li>
+                            <li><span>Database Management System</span><br>Developed SQL queries to extract, manipulate, and analyze large datasets</li>
+                        </ul>
+                    </div>
+<!--                  <div class="tab-contents" id="internships">
+                        <ul>
+                            <p><span>ML with Python</span><br>Built foundational ML skills by implementing various libraries in Jupyter Notebook</p>
+                            <p><span>Data Preprocessing</span><br>Collaborated on data cleaning and feature engineering to prepare datasets for model training</p>
+                            <p><span>Projects</span><br>Developed projects like Fashion Recommendation System, Student Performance Prediction, and Iris Prediction</p>
+                        </ul>
+                    </div> --> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+<!--                          <li><span>Pydah College of Engineering</span><br>Master of Technology  (2024-Present)</li> -->
+<!--                             <li><span>Pydah College of Engineering</span><br>Master of Technology  (2024-Present)</li> -->
+                            <li><span>Aditya College of Engineering</span><br>Bachelor of Technology  (2020-2024)</li>
+                            <li><span>Kovvur Boys Jr.College</span><br>Intermediate (2018-2020)</li>
+                            <li><span>P.M.M.M.M High School</span><br>10th Standard (2017-2018)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------PROJECTS----------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python mini Proects</h2>
+                    <p>A collection of Python-based projects that showcase my ability to solve real-world problems, automate tasks, and develop efficient code. </p>
+                    <a href="https://github.com/lokeshlokesh2121/Oop-E-commerce-mini-project-in-python">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>Frontend Projects</h2>
+                    <p>These projects demonstrate my ability to create visually appealing, responsive, and user-friendly web interfaces.</p>
+                    <a href="https://github.com/lokeshlokesh2121/Frond-end-mini-projects/tree/main">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>TODOs Application</h2>
+                    <p>Developed a responsive To-Do application using HTML, CSS, and JavaScript, enabling users to add, edit, and delete tasks. Integrated local storage for persistent data management across sessions</p>
+                    <a href="https://github.com/dashboard">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------PROFILES----------- -->
+    <div id="profiles">
+        <div class="container">
+            <h1 class="sub-title">Profiles</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="data:image/png;base64,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" >
+                    <div class="layer">
+                        <h3>Leetcode</h3>
+                        <p>Profile</p>
+                        <a href="https://leetcode.com/u/Immandi_Lokesh/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="data:image/png;base64,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" >
+                    <div class="layer">
+                        <h3>Geek for Geeks</h3>
+                        <p>Profile</p>
+                        <a href="https://www.geeksforgeeks.org/user/20mh1a174j"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dcdorp4tr/image/upload/v1727600600/github_image_logo_vov5ub.png" >
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>Profile</p>
+                        <a href="https://github.com/lokeshlokesh2121"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.codechef.com/users/lokesh_79" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ------------CONTACT------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> immandilokesh431@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 82605 47148</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lokesh-immandi-a8a343247/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:immandilokesh431@gmail.com"><i class="fa-regular fa-envelope"></i>
+                        <a href="https://www.instagram.com/lokesh_i_"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/lokesh_I_"><i class="fa-brands fa-x-twitter"></i></a>   
+                    </div>
+                    <a href="Desktop/IMMANDILOKESHRESUME" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your Name" required>
+                        <input type="text" name="Email" placeholder="Enter yor Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Loki. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx-IqEHg5qqGvBJsA1Cn9uUhtZeITSb0PBNi8F8xwElv2lZG1y1VxKXYxUD316GCELy/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{ 
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function()
+                {
+                    msg.innerHTML = "";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
