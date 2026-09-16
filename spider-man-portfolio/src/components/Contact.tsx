@@ -13,21 +13,20 @@ const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState(""); // "" | "sending" | "success" | "error"
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {    e.preventDefault();
     setStatus("sending");
 
     emailjs
       .sendForm(
         "service_45s8es1",     // e.g. "service_abc123"
         "template_ebw36as",    // e.g. "template_xyz789"
-        form.current,
+        form.current!,
         "DYBo-ygrPOyHhILlt"      // e.g. "aBcDeFgH..."
       )
       .then(
         () => {
           setStatus("success");
-          form.current.reset();
+          form.current?.reset();
           setTimeout(() => setStatus(""), 4000);
         },
         (error) => {
