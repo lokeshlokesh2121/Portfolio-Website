@@ -1,0 +1,19 @@
+.skills {
+  padding: 80px;
+  background: #0a0a0a;
+  color: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 20px;
+  background: #161616;
+  border: 1px solid red;
+  border-radius: 15px;
+  text-align: center;
+}
