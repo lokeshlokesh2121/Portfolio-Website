@@ -63,7 +63,7 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {    e.preventDefault
             </div>
             <div className="contact-item">
               <FaMapMarkerAlt />
-              <span>Rajahmundry, Andhra Pradesh</span>
+              <span>Hitech City, Hyderabad</span>
             </div>
           </div>
 
